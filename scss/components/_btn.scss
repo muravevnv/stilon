@@ -1,0 +1,41 @@
+.btn {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    background: linear-gradient(90deg, rgba(177, 202, 250, 0) 0%, #B1CAFA 53.85%, rgba(177, 202, 250, 0) 99.04%);
+    padding: 1px;
+    z-index: 1;
+    border-radius: 32px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    &__text {
+        width: 100%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 23px;
+        background: var(--btn-bg-primary);
+        border-radius: 32px;
+        font-size: 20px;
+        line-height: 1.1;
+        font-weight: 600;
+        color: var(--color-white);
+
+        @media screen and (max-width: 991.98px) {
+            font-size: 16px;
+            line-height: 1.25;
+            padding: 12px 23px;
+        }
+    }
+
+
+    &--secondary {
+        background: linear-gradient(90deg, rgba(255, 44, 84, 0) 0%, #FF2C54 53.85%, rgba(255, 44, 84, 0) 99.04%);
+
+        .btn__text {
+            background: var(--btn-bg-secondary);
+        }
+    }
+}

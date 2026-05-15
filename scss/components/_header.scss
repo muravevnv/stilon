@@ -1,0 +1,125 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 16px 0 0 0;
+    z-index: 99;
+
+    &.is-white {
+
+        .header__inner {
+            background: #8589945C;
+        }
+
+        .header__logo {
+            background-color: transparent;
+
+            .logo-white {
+                display: block;
+            }
+
+            .logo-primary {
+                display: none;
+            }
+        }
+    }
+
+    &__wrapper {
+        padding: 24px;
+
+        @media screen and (max-width: 767.98px) {
+            padding: 8px;
+        }
+    }
+
+    &__inner {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #F3F4F84A;
+        border-radius: 40px;
+        backdrop-filter: blur(35px);
+        padding: 0 8px 0 0;
+    }
+
+    &__nav {
+
+        @media screen and (max-width: 1279.98px) {
+            display: none;
+        }
+
+        &-list {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+        &-link {
+            color: var(--color-white);
+        }
+    }
+
+    &__logo {
+        border-radius: 40px;
+        background-color: var(--color-white);
+
+        .logo-white {
+            display: none;
+        }
+    }
+
+    &__action {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    &__tel {
+        color: var(--color-white);
+        font-weight: 700;
+        line-height: 1.25;
+
+        @media screen and (max-width: 767.98px) {
+            display: none;
+        }
+    }
+
+    &__basket {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        flex-shrink: 0;
+        background-color: var(--color-white);
+
+        &-icon {
+            display: block;
+            width: 22px;
+            height: 18px;
+            margin: 2px 4px 0 0;
+        }
+
+        &-counter {
+            position: absolute;
+            top: 6px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 13px;
+            height: 13px;
+            font-size: 7px;
+            line-height: 1.1;
+            font-weight: 600;
+            color: var(--color-white);
+            background-color: var(--color-red);
+            border-radius: 50%;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+body {
+    font-family: var(--font-primary);
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--color-primary);
+    background-color: var(--color-main-bg);
+}
+
+.container {
+    max-width: var(--container);
+    width: 100%;
+    padding: 0 var(--pad);
+    margin: 0 auto;
+}
+
+.section {
+    padding: 16px 0;
+
+    + .section {
+        padding-top: 0;
+    }
+}

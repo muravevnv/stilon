@@ -1,0 +1,103 @@
+.form-group {
+    width: 100%;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 15px 25px;
+    font-size: 20px;
+    line-height: 1.1;
+    font-weight: 500;
+    border: 1px solid var(--color-border);
+    border-radius: 33px;
+    outline: none;
+
+    @media screen and (max-width: 991.98px) {
+        padding: 11px 19px;
+        font-size: 16px;
+        line-height: 1.25;
+    }
+
+    &::placeholder {
+        color: var(--color-primary-100);
+    }
+
+    &:focus::placeholder {
+        opacity: 0;
+    }
+}
+
+textarea.form-control {
+    height: 150px;
+
+    @media screen and (max-width: 991.98px) {
+        height: 120px;
+        border-radius: 24px;
+    }
+}
+
+.form-action {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    align-items: flex-start;
+    gap: 32px;
+
+    @media screen and (max-width: 1279.98px) {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+
+.form-btn {
+
+    @media screen and (max-width: 1279.98px) {
+        width: 100%;
+    }
+}
+
+.form-checkbox {
+    position: relative;
+
+    input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
+
+        &:checked+label {
+            color: var(--color-primary);
+
+            &::before {
+                background-color: var(--color-red);
+            }
+        }
+    }
+
+    label {
+        display: block;
+        font-size: 12px;
+        line-height: 1.2;
+        color: var(--color-black-25);
+        cursor: pointer;
+        padding-left: 38px;
+
+        a {
+            font-weight: 700;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 30px;
+            height: 30px;
+            mask: url('../../img/icons/checkbox.svg') center center / 30px no-repeat;
+            -webkit-mask: url('../../img/icons/checkbox.svg') center center / 30px no-repeat;
+            background-color: var(--color-black-25);
+        }
+    }
+}
