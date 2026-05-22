@@ -13,6 +13,7 @@
         padding: 120px 45px 130px;
         border-radius: 28px;
         color: var(--color-white);
+        background-color: #15325C;
         overflow: hidden;
         z-index: 1;
 
@@ -22,6 +23,8 @@
 
         @media screen and (max-width: 767.98px) {
             border-radius: 20px;
+            justify-content: flex-start;
+            padding: 82px 24px 280px;
         }
     }
 
@@ -34,15 +37,7 @@
         z-index: -1;
 
         @media screen and (max-width: 767.98px) {
-
-            &::before {
-                content: '';
-                position: absolute;
-                inset: 0;
-                width: 100%;
-                height: 100%;
-                background-color: rgba(0, 0, 0, 0.4);
-            }
+            inset: 0;
         }
 
         img {
@@ -58,7 +53,7 @@
         margin-bottom: 32px;
 
         @media screen and (max-width: 767.98px) {
-            margin-bottom: 24px;
+            margin-bottom: 20px;
         }
     }
 

@@ -11,6 +11,7 @@
         border-radius: 28px;
         overflow: hidden;
         z-index: 1;
+        background: url('../img/main-about/bg.png') top center / cover no-repeat;
 
         @media screen and (max-width: 1279.98px) {
             flex-direction: column;
@@ -18,7 +19,9 @@
 
         @media screen and (max-width: 767.98px) {
             padding: 24px;
+            gap: 32px;
             border-radius: 20px;
+            background: url('../img/main-about/main-about-img.png') bottom 70px left 0 / 356px no-repeat, url('../img/main-about/bg-sm.png') top center / cover no-repeat;
         }
     }
 
@@ -66,6 +69,10 @@
         @media screen and (max-width: 1279.98px) {
             margin-left: auto;
         }
+
+        @media screen and (max-width: 767.98px) {
+            max-width: 100%;
+        }
     }
 
     &__details {
@@ -74,7 +81,7 @@
         gap: 32px;
 
         @media screen and (max-width: 767.98px) {
-            gap: 32px;
+            gap: 20px;
         }
     }
 
@@ -96,7 +103,7 @@
             padding-bottom: 40px;
 
             @media screen and (max-width: 767.98px) {
-                padding-bottom: 32px;
+                padding-bottom: 20px;
             }
 
             &::before {
@@ -123,7 +130,7 @@
                 font-size: 80px;
 
                 @media screen and (max-width: 767.98px) {
-                    font-size: 40px;
+                    font-size: 60px;
                 }
             }
         }
@@ -144,7 +151,7 @@
         margin-top: 100px;
 
         @media screen and (max-width: 767.98px) {
-            margin-top: 40px;
+            margin-top: 340px;
         }
     }
 

@@ -20,27 +20,27 @@
                     <nav class="header__nav">
                         <ul class="header__nav-list">
                             <li class="header__nav-item">
-                                <a href="#" class="header__nav-link">Каталог</a>
+                                <a href="#" class="header__nav-link line-link">Каталог</a>
                             </li>
                             <li class="header__nav-item">
-                                <a href="#" class="header__nav-link">Услуги</a>
+                                <a href="#" class="header__nav-link line-link">Услуги</a>
                             </li>
                             <li class="header__nav-item">
-                                <a href="#" class="header__nav-link">О компании</a>
+                                <a href="#" class="header__nav-link line-link">О компании</a>
                             </li>
                             <li class="header__nav-item">
-                                <a href="#" class="header__nav-link">Новости</a>
+                                <a href="#" class="header__nav-link line-link">Новости</a>
                             </li>
                             <li class="header__nav-item">
-                                <a href="#" class="header__nav-link">Скачать каталоги</a>
+                                <a href="#" class="header__nav-link line-link">Скачать каталоги</a>
                             </li>
                             <li class="header__nav-item">
-                                <a href="#" class="header__nav-link">Контакты</a>
+                                <a href="#" class="header__nav-link line-link">Контакты</a>
                             </li>
                         </ul>
                     </nav>
                     <div class="header__action">
-                        <a href="tel:+78124253448" class="header__tel">+7 812 425-34-48</a>
+                        <a href="tel:+78124253448" class="header__tel line-link">+7 812 425-34-48</a>
                         <a href="#" class="header__basket">
                             <span class="header__basket-icon">
                                 <svg width="22" height="19" viewBox="0 0 22 19" fill="none"
@@ -58,6 +58,10 @@
                             </span>
                             <span class="header__basket-counter">2</span>
                         </a>
+                        <button type="button" class="header__burger">
+                            <img class="header__burger-default" src="./img/burger.svg" alt="">
+                            <img class="header__burger-close" src="./img/burger-close.svg" alt="">
+                        </button>
                     </div>
                 </div>
             </div>
@@ -69,6 +73,7 @@
             <div class="container">
                 <div class="hero__inner">
                     <picture class="hero__img">
+                        <source srcset="./img/about/hero-sm.png" media="(max-width: 767.98px)">
                         <img src="./img/about/hero.png" alt="">
                     </picture>
                     <h1 class="hero__title h1">Ёмкий заголовок (пара слов)</h1>
@@ -192,11 +197,11 @@
                             <img src="./img/logo.svg" alt="">
                         </a>
                         <nav class="footer__nav">
-                            <a href="#" class="footer__nav-link">Каталог</a>
-                            <a href="#" class="footer__nav-link">Услуги</a>
-                            <a href="#" class="footer__nav-link">О компании</a>
-                            <a href="#" class="footer__nav-link">Новости</a>
-                            <a href="#" class="footer__nav-link">Скачать каталоги</a>
+                            <a href="#" class="footer__nav-link line-link">Каталог</a>
+                            <a href="#" class="footer__nav-link line-link">Услуги</a>
+                            <a href="#" class="footer__nav-link line-link">О компании</a>
+                            <a href="#" class="footer__nav-link line-link">Новости</a>
+                            <a href="#" class="footer__nav-link line-link">Скачать каталоги</a>
                         </nav>
                         <div class="footer__contacts">
                             <div class="footer__contacts-top">
@@ -205,20 +210,20 @@
                                     г. Гатчина, пр-кт 25 Октября, д.42А, помещ.2
                                 </div>
                                 <div class="footer__contacts-address">
-                                    Работа офиса:с 9-00 до 18-00 пн вт ср чт пт сб вс
+                                    Работа офиса:с 9-00 до 18-00 <br> пн вт ср чт пт сб вс
                                 </div>
                             </div>
                             <div class="footer__contacts-links">
-                                <a href="#" class="footer__contacts-link">+7 (812) 425-34-48</a>
-                                <a href="#" class="footer__contacts-link">info@stilon.msk.ru</a>
+                                <a href="#" class="footer__contacts-link line-link">+7 (812) 425-34-48</a>
+                                <a href="#" class="footer__contacts-link line-link">info@stilon.msk.ru</a>
                             </div>
                         </div>
                     </div>
                     <div class="footer__bottom">
                         <div class="footer__policy">
-                            <a href="#">Политика обработки персональных данных |</a>
-                            <a href="#">Пользовательское соглашение |</a>
-                            <a href="#">Согласие на обработку персональных</a>
+                            <a href="#" class="line-link">Политика обработки персональных данных |</a>
+                            <a href="#" class="line-link">Пользовательское соглашение |</a>
+                            <a href="#" class="line-link">Согласие на обработку персональных</a>
                         </div>
                         <div class="footer__copyright">
                             © 2011-2024 Стилон. Все права защищены. Использование материалов
@@ -227,7 +232,9 @@
                     </div>
                 </div>
                 <div class="footer__map">
-                    <img src="./img/map.png" alt="">
+                    <iframe
+                        src="https://yandex.ru/map-widget/v1/?um=constructor%3A3d150646aafa24e2a038e88ef0f537c2dd615debf483e47c94ade8879117e99b&amp;source=constructor"
+                        width="100%" height="400" frameborder="0"></iframe>
                 </div>
             </div>
         </div>

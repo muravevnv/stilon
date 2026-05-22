@@ -58,6 +58,10 @@
                             </span>
                             <span class="header__basket-counter">2</span>
                         </a>
+                        <button type="button" class="header__burger">
+                            <img class="header__burger-default" src="./img/burger.svg" alt="">
+                            <img class="header__burger-close" src="./img/burger-close.svg" alt="">
+                        </button>
                     </div>
                 </div>
             </div>
@@ -69,6 +73,7 @@
             <div class="container">
                 <div class="hero__inner">
                     <picture class="hero__img">
+                        <source srcset="./img/hero/hero-sm.png" media="(max-width: 767.98px)">
                         <img src="./img/hero/hero.png" alt="">
                     </picture>
                     <h1 class="hero__title h1">Комплексное оснащение предприятий</h1>
@@ -87,10 +92,11 @@
                 <div class="benefits__list">
                     <div class="benefits__main">
                         <div class="benefits__main-num">01</div>
-                        <div class="benefits__main-title h4">Создание индивидуальных комплектов</div>
-                        <div class="benefits__main-desc">Тут предлагаем внедрить краткое описание пункта, основные
-                            тезисы</div>
+                        <div class="benefits__main-title h4">Создание <br> индивидуальных <br> комплектов</div>
+                        <div class="benefits__main-desc">Тут предлагаем внедрить <br> краткое описание пункта, <br>
+                            основные тезисы</div>
                         <picture class="benefits__main-img">
+                            <source srcset="./img/benefits/main-sm.png" media="(max-width: 767.98px)">
                             <img src="./img/benefits/main.jpg" alt="">
                         </picture>
                     </div>
@@ -173,10 +179,7 @@
         <section class="main-about section">
             <div class="container">
                 <div class="main-about__inner">
-                    <picture class="main-about__img">
-                        <source srcset="./img/main-about/bg-sm.png" media="(max-width: 767.98px)">
-                        <img src="./img/main-about/bg.png" alt="">
-                    </picture>
+
                     <div class="main-about__head">
                         <h2 class="main-about__title h2">О компании</h2>
                         <div class="main-about__desc">
@@ -289,11 +292,11 @@
                         <div class="footer__contacts">
                             <div class="footer__contacts-top">
                                 <div class="footer__contacts-address">
-                                    188300, Ленинградская область, м.о. Гатчинский, 
+                                    188300, Ленинградская область, м.о. Гатчинский,
                                     г. Гатчина, пр-кт 25 Октября, д.42А, помещ.2
                                 </div>
                                 <div class="footer__contacts-address">
-                                    Работа офиса:с 9-00 до 18-00 пн вт ср чт пт сб вс
+                                    Работа офиса:с 9-00 до 18-00 <br> пн вт ср чт пт сб вс
                                 </div>
                             </div>
                             <div class="footer__contacts-links">
@@ -315,7 +318,9 @@
                     </div>
                 </div>
                 <div class="footer__map">
-                    <img src="./img/map.png" alt="">
+                    <iframe
+                        src="https://yandex.ru/map-widget/v1/?um=constructor%3A3d150646aafa24e2a038e88ef0f537c2dd615debf483e47c94ade8879117e99b&amp;source=constructor"
+                        width="100%" height="400" frameborder="0"></iframe>
                 </div>
             </div>
         </div>

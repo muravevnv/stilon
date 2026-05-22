@@ -42,6 +42,10 @@
         border-radius: 40px;
         backdrop-filter: blur(35px);
         padding: 0 8px 0 0;
+
+        @media screen and (max-width: 767.98px) {
+            padding-right: 6px;
+        }
     }
 
     &__nav {
@@ -65,6 +69,13 @@
         border-radius: 40px;
         background-color: var(--color-white);
 
+        @media screen and (max-width: 767.98px) {
+            display: flex;
+            align-items: center;
+            width: 128px;
+            height: 40px;
+        }
+
         .logo-white {
             display: none;
         }
@@ -74,6 +85,10 @@
         display: flex;
         align-items: center;
         gap: 16px;
+
+        @media screen and (max-width: 767.98px) {
+            gap: 12px;
+        }
     }
 
     &__tel {
@@ -83,6 +98,39 @@
 
         @media screen and (max-width: 767.98px) {
             display: none;
+        }
+    }
+
+    &__burger {
+        display: none;
+
+        @media screen and (max-width: 767.98px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            border: none;
+            background-color: transparent;
+            outline: none;
+            user-select: none;
+            padding: 0;
+
+            &-close {
+                display: none;
+            }
+
+            &.is-active {
+
+                &-close {
+                    display: block;
+                }
+
+                &-default {
+                    display: none;
+                }
+            }
         }
     }
 
@@ -96,6 +144,11 @@
         border-radius: 50%;
         flex-shrink: 0;
         background-color: var(--color-white);
+
+        @media screen and (max-width: 767.98px) {
+            width: 32px;
+            height: 32px;
+        }
 
         &-icon {
             display: block;
@@ -120,6 +173,10 @@
             color: var(--color-white);
             background-color: var(--color-red);
             border-radius: 50%;
+
+            @media screen and (max-width: 767.98px) {
+                top: 4px;
+            }
         }
     }
 }
