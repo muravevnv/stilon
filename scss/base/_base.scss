@@ -16,7 +16,31 @@ body {
 .section {
     padding: 16px 0;
 
-    + .section {
+    +.section {
         padding-top: 0;
+    }
+}
+
+.line-link {
+    position: relative;
+    text-decoration: none
+}
+
+.line-link:after {
+    background: currentColor;
+    bottom: -2px;
+    content: "";
+    height: 1px;
+    position: absolute;
+    right: 0;
+    transition: .25s;
+    width: 0
+}
+
+@media screen and (hover: hover) {
+    .line-link:hover:after {
+        left: 0;
+        right: auto;
+        width: 100%
     }
 }

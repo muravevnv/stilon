@@ -404,6 +404,29 @@ body {
   padding-top: 0;
 }
 
+.line-link {
+  position: relative;
+  text-decoration: none;
+}
+
+.line-link:after {
+  background: currentColor;
+  bottom: -2px;
+  content: "";
+  height: 1px;
+  position: absolute;
+  right: 0;
+  transition: 0.25s;
+  width: 0;
+}
+
+@media screen and (hover: hover) {
+  .line-link:hover:after {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+}
 @font-face {
   font-family: "TikTok Sans";
   src: url("../fonts/TikTokSans_24pt_Expanded-Regular.woff") format("woff"), url("../fonts/TikTokSans_24pt_Expanded-Regular.woff2") format("woff2");
@@ -775,6 +798,7 @@ body {
   border: none;
   outline: none;
   cursor: pointer;
+  transition: all 0.3s ease 0s;
 }
 .btn__text {
   width: 100%;
@@ -796,11 +820,21 @@ body {
     padding: 12px 23px;
   }
 }
+@media (any-hover: hover) {
+  .btn:hover {
+    box-shadow: 1px 0px 29px 0px rgba(177, 202, 250, 0.75);
+  }
+}
 .btn--secondary {
   background: linear-gradient(90deg, rgba(255, 44, 84, 0) 0%, #FF2C54 53.85%, rgba(255, 44, 84, 0) 99.04%);
 }
 .btn--secondary .btn__text {
   background: var(--btn-bg-secondary);
+}
+@media (any-hover: hover) {
+  .btn--secondary:hover {
+    box-shadow: 1px 0px 29px 0px rgba(255, 44, 84, 0.75);
+  }
 }
 
 .form-group {

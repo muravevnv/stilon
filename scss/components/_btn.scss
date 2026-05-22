@@ -9,6 +9,7 @@
     border: none;
     outline: none;
     cursor: pointer;
+    transition: all 0.3s ease 0s;
 
     &__text {
         width: 100%;
@@ -30,12 +31,28 @@
         }
     }
 
+    @media (any-hover: hover) {
+
+
+        &:hover {
+            box-shadow: 1px 0px 29px 0px rgba(177, 202, 250, 0.75);
+        }
+    }
+
 
     &--secondary {
         background: linear-gradient(90deg, rgba(255, 44, 84, 0) 0%, #FF2C54 53.85%, rgba(255, 44, 84, 0) 99.04%);
 
         .btn__text {
             background: var(--btn-bg-secondary);
+        }
+
+        @media (any-hover: hover) {
+
+
+            &:hover {
+                box-shadow: 1px 0px 29px 0px rgba(255, 44, 84, 0.75);
+            }
         }
     }
 }
