@@ -1,6 +1,19 @@
 .hero {
     padding: 16px 0;
 
+    &--md {
+
+        .hero__inner {
+            max-height: unset;
+            height: 100%;
+            min-height: 560px;
+
+            @media screen and (max-width: 767.98px) {
+                min-height: 400px;
+            }
+        }
+    }
+
     &__inner {
         width: 100%;
         height: calc(100vh - 32px);
@@ -24,7 +37,7 @@
         @media screen and (max-width: 767.98px) {
             border-radius: 20px;
             justify-content: flex-start;
-            padding: 82px 24px 280px;
+            padding: 82px 20px 40px;
         }
     }
 
@@ -48,8 +61,15 @@
         }
     }
 
+    &__breadcrumbs {
+        margin-bottom: 40px;
+
+        @media screen and (max-width: 767.98px) {
+            margin-bottom: 24px;
+        }
+    }
+
     &__title {
-        max-width: 570px;
         margin-bottom: 32px;
 
         @media screen and (max-width: 767.98px) {

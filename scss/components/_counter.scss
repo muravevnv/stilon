@@ -1,0 +1,65 @@
+.counter {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 35px;
+        height: 35px;
+        flex-shrink: 0;
+        background-color: #8589945C;
+        border-radius: 50%;
+        border: none;
+        outline: none;
+        user-select: none;
+        cursor: pointer;
+        transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: var(--color-primary);
+                color: var(--color-white);
+            }
+        }
+
+        &--minus {
+
+            &::before {
+                content: '';
+                width: 35px;
+                height: 35px;
+                mask: url('../../img/icons/minus.svg') center center / 35px no-repeat;
+                -webkit-mask: url('../../img/icons/minus.svg') center center / 35px no-repeat;
+                background-color: currentColor;
+            }
+        }
+
+        &--plus {
+
+            &::before {
+                content: '';
+                width: 35px;
+                height: 35px;
+                mask: url('../../img/icons/plus.svg') center center / 35px no-repeat;
+                -webkit-mask: url('../../img/icons/plus.svg') center center / 35px no-repeat;
+                background-color: currentColor;
+            }
+        }
+    }
+
+    &__input {
+        width: 50px;
+        text-align: center;
+        font-size: 16px;
+        line-height: 1.1;
+        font-weight: 600;
+        flex-shrink: 0;
+        background-color: transparent;
+        color: var(--color-primary);
+        outline: none;
+        border: none;
+    }
+}

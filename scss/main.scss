@@ -9,6 +9,9 @@
 @use 'components/footer';
 @use 'components/btn';
 @use 'components/form';
+@use 'components/counter';
+@use 'components/contacts-form';
+@use 'components/breadcrumbs';
 
 @use 'sections/hero';
 @use 'sections/benefits';
@@ -20,5 +23,9 @@
 @use 'sections/catalog';
 @use 'sections/contacts-map';
 @use 'sections/hero-contacts';
-@use 'sections/hero-page-head';
+@use 'sections/hero-page-header';
 @use 'sections/blog';
+@use 'sections/article';
+@use 'sections/cart';
+@use 'sections/order';
+@use 'sections/services';

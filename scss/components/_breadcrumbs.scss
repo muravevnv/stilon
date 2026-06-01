@@ -1,0 +1,27 @@
+.breadcrumbs {
+
+    &__list {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 8px 12px;
+    }
+
+    &__item {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 14px;
+        line-height: 1;
+        
+        &:not(:first-child) {
+            padding-left: 11px;
+            border-left: 2px solid currentColor;
+        }
+    }
+
+    &__link {
+        font-size: 14px;
+        line-height: 1;
+    }
+}
