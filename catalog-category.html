@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/main.css">
+    <title>Каталог</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__inner">
+                    <a href="#" class="header__logo">
+                        <img class="logo-primary" src="./img/logo.svg" alt="">
+                        <img class="logo-white" src="./img/logo-white.svg" alt="">
+                    </a>
+                    <nav class="header__nav">
+                        <ul class="header__nav-list">
+                            <li class="header__nav-item">
+                                <a href="#" class="header__nav-link line-link">Каталог</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#" class="header__nav-link line-link">Услуги</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#" class="header__nav-link line-link">О компании</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#" class="header__nav-link line-link">Новости</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#" class="header__nav-link line-link">Скачать каталоги</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#" class="header__nav-link line-link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__action">
+                        <a href="tel:+78124253448" class="header__tel line-link">+7 812 425-34-48</a>
+                        <a href="#" class="header__basket">
+                            <span class="header__basket-icon">
+                                <svg width="22" height="19" viewBox="0 0 22 19" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M21.8284 2.57417C21.6661 2.35757 21.4113 2.23008 21.1406 2.23008H4.95357L4.48164 0.617934C4.37443 0.251668 4.03855 0 3.6569 0H0.859375C0.384742 0 0 0.384742 0 0.859375C0 1.33401 0.384742 1.71875 0.859375 1.71875H3.01301C3.13852 2.14754 6.31288 12.9914 6.4411 13.4295C6.54831 13.7957 6.88424 14.0474 7.26585 14.0474H18.1845C18.5662 14.0474 18.902 13.7957 19.0093 13.4295L21.9654 3.33089C22.0414 3.07119 21.9906 2.79078 21.8284 2.57417ZM17.5407 12.3286H7.90973L5.45673 3.94883H19.9937L17.5407 12.3286Z"
+                                        fill="#194B8E" />
+                                    <path
+                                        d="M10.4106 18.0469C11.0514 18.0469 11.5708 17.5275 11.5708 16.8867C11.5708 16.246 11.0514 15.7266 10.4106 15.7266C9.76991 15.7266 9.25049 16.246 9.25049 16.8867C9.25049 17.5275 9.76991 18.0469 10.4106 18.0469Z"
+                                        fill="#E4002B" />
+                                    <path
+                                        d="M15.0396 18.0469C15.6803 18.0469 16.1997 17.5275 16.1997 16.8867C16.1997 16.246 15.6803 15.7266 15.0396 15.7266C14.3988 15.7266 13.8794 16.246 13.8794 16.8867C13.8794 17.5275 14.3988 18.0469 15.0396 18.0469Z"
+                                        fill="#E4002B" />
+                                </svg>
+                            </span>
+                            <span class="header__basket-counter">2</span>
+                        </a>
+                        <button type="button" class="header__burger">
+                            <img class="header__burger-default" src="./img/burger.svg" alt="">
+                            <img class="header__burger-close" src="./img/burger-close.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <main>
+        <section class="hero hero--md section">
+            <div class="container">
+                <div class="hero__inner">
+                    <picture class="hero__img">
+                        <img src="./img/catalog/hero.png" alt="">
+                    </picture>
+                    <h1 class="hero__title h1">Каталог</h1>
+                    <div class="hero__desc">
+                        Рекомендуем подзаголовок
+                    </div>
+                    <a href="#" class="hero__btn btn">
+                        <div class="btn__text">
+                            Задать вопрос
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <div class="catalog-categories">
+            <div class="container">
+                <div class="catalog-categories__inner">
+                    <div class="catalog-categories__nav">
+                        <div class="catalog-categories__nav-title">Популярное</div>
+                        <div class="catalog-categories__nav-list">
+                            <a href="#" class="catalog-categories__nav-link">Гидравлические гайковерты</a>
+                            <a href="#" class="catalog-categories__nav-link">Слесарно-монтажный инструмент</a>
+                            <a href="#" class="catalog-categories__nav-link">Резьбонарезной инструмент</a>
+                        </div>
+                    </div>
+                    <div class="catalog-categories__search">
+                        <div class="catalog-categories__search-icon"></div>
+                        <input type="text" class="catalog-categories__search-input" placeholder="Поиск">
+                    </div>
+                    <div class="catalog-categories__items">
+                        <a href="#" class="catalog-categories__item">
+                            <div class="catalog-categories__item-title">
+                                Гидравлические <br> гайковерты
+                            </div>
+                            <picture class="catalog-categories__item-img">
+                                <img src="./img/catalog/cat-01.png" alt="">
+                            </picture>
+                        </a>
+                        <a href="#" class="catalog-categories__item">
+                            <div class="catalog-categories__item-title">
+                                Гидравлический <br> аварийно-спасательный <br> инструмент
+                            </div>
+                            <picture class="catalog-categories__item-img">
+                                <img src="./img/catalog/cat-02.png" alt="">
+                            </picture>
+                        </a>
+                        <a href="#" class="catalog-categories__item">
+                            <div class="catalog-categories__item-title">
+                                Мультипликаторы
+                            </div>
+                            <picture class="catalog-categories__item-img">
+                                <img src="./img/catalog/cat-03.png" alt="">
+                            </picture>
+                        </a>
+                        <a href="#" class="catalog-categories__item">
+                            <div class="catalog-categories__item-title">
+                                Пневматический <br> инструмент
+                            </div>
+                            <picture class="catalog-categories__item-img">
+                                <img src="./img/catalog/cat-04.png" alt="">
+                            </picture>
+                        </a>
+                        <a href="#" class="catalog-categories__item">
+                            <div class="catalog-categories__item-title">
+                                Слесарно-монтажный <br> инструмент
+                            </div>
+                            <picture class="catalog-categories__item-img">
+                                <img src="./img/catalog/cat-05.png" alt="">
+                            </picture>
+                        </a>
+                        <a href="#" class="catalog-categories__item">
+                            <div class="catalog-categories__item-title">
+                                Инструмент <br> для работы на высоте
+                            </div>
+                            <picture class="catalog-categories__item-img">
+                                <img src="./img/catalog/cat-06.png" alt="">
+                            </picture>
+                        </a>
+                        <a href="#" class="catalog-categories__item">
+                            <div class="catalog-categories__item-title">
+                                Искробезопасный <br> инструмент
+                            </div>
+                            <picture class="catalog-categories__item-img">
+                                <img src="./img/catalog/cat-07.png" alt="">
+                            </picture>
+                        </a>
+                        <a href="#" class="catalog-categories__item">
+                            <div class="catalog-categories__item-title">
+                                Мерительный <br> инструмент
+                            </div>
+                            <picture class="catalog-categories__item-img">
+                                <img src="./img/catalog/cat-08.png" alt="">
+                            </picture>
+                        </a>
+                        <a href="#" class="catalog-categories__item">
+                            <div class="catalog-categories__item-title">
+                                Съемники
+                            </div>
+                            <picture class="catalog-categories__item-img">
+                                <img src="./img/catalog/cat-09.png" alt="">
+                            </picture>
+                        </a>
+                        <a href="#" class="catalog-categories__item">
+                            <div class="catalog-categories__item-title">
+                                Резьбонарезной <br> инструмент
+                            </div>
+                            <picture class="catalog-categories__item-img">
+                                <img src="./img/catalog/cat-10.png" alt="">
+                            </picture>
+                        </a>
+                        <a href="#" class="catalog-categories__item">
+                            <div class="catalog-categories__item-title">
+                                Промышленная мебель
+                            </div>
+                            <picture class="catalog-categories__item-img">
+                                <img src="./img/catalog/cat-11.png" alt="">
+                            </picture>
+                        </a>
+                        <a href="#" class="catalog-categories__item">
+                            <div class="catalog-categories__item-title">
+                                Абразивные <br> круги
+                            </div>
+                            <picture class="catalog-categories__item-img">
+                                <img src="./img/catalog/cat-12.png" alt="">
+                            </picture>
+                        </a>
+                        <a href="#" class="catalog-categories__item catalog-categories__item--secondary catalog-categories__item--wide">
+                            <div class="catalog-categories__item-title">
+                                Дополнительное <br> оборудование
+                            </div>
+                            <picture class="catalog-categories__item-img">
+                                <img src="./img/catalog/cat-13.png" alt="">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__main">
+                    <div class="footer__top">
+                        <a href="#" class="footer__logo">
+                            <img src="./img/logo.svg" alt="">
+                        </a>
+                        <nav class="footer__nav">
+                            <a href="#" class="footer__nav-link">Каталог</a>
+                            <a href="#" class="footer__nav-link">Услуги</a>
+                            <a href="#" class="footer__nav-link">О компании</a>
+                            <a href="#" class="footer__nav-link">Новости</a>
+                            <a href="#" class="footer__nav-link">Скачать каталоги</a>
+                        </nav>
+                        <div class="footer__contacts">
+                            <div class="footer__contacts-top">
+                                <div class="footer__contacts-address">
+                                    188300, Ленинградская область, м.о. Гатчинский,
+                                    г. Гатчина, пр-кт 25 Октября, д.42А, помещ.2
+                                </div>
+                                <div class="footer__contacts-address">
+                                    Работа офиса:с 9-00 до 18-00 пн вт ср чт пт сб вс
+                                </div>
+                            </div>
+                            <div class="footer__contacts-links">
+                                <a href="#" class="footer__contacts-link">+7 (812) 425-34-48</a>
+                                <a href="#" class="footer__contacts-link">info@stilon.msk.ru</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__bottom">
+                        <div class="footer__policy">
+                            <a href="#">Политика обработки персональных данных |</a>
+                            <a href="#">Пользовательское соглашение |</a>
+                            <a href="#">Согласие на обработку персональных</a>
+                        </div>
+                        <div class="footer__copyright">
+                            © 2011-2024 Стилон. Все права защищены. Использование материалов
+                            сайта без письменного согласия правооблодателя запрещено
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__map">
+                    <img src="./img/map.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

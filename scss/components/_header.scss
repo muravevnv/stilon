@@ -6,7 +6,7 @@
     padding: 16px 0 0 0;
     z-index: 99;
 
-    &.is-white {
+    &--white {
 
         .header__inner {
             background: #8589945C;
@@ -25,7 +25,21 @@
         }
     }
 
+    &--open-catalog {
+
+        .header__inner {
+            border-radius: 40px 40px 0 0;
+        }
+
+        .header__catalog {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: all;
+        }
+    }
+
     &__wrapper {
+        position: relative;
         padding: 24px;
 
         @media screen and (max-width: 767.98px) {
@@ -42,6 +56,7 @@
         border-radius: 40px;
         backdrop-filter: blur(35px);
         padding: 0 8px 0 0;
+        transition: 0.4s ease-in-out;
 
         @media screen and (max-width: 767.98px) {
             padding-right: 6px;
@@ -176,6 +191,68 @@
 
             @media screen and (max-width: 767.98px) {
                 top: 4px;
+            }
+        }
+    }
+
+    &__catalog {
+        position: absolute;
+        width: calc(100% - 48px);
+        top: calc(100% - 24px);
+        left: 24px;
+        right: 24px;
+        padding: 32px 20px 24px;
+        background-color: #F3F4F84A;
+        border-radius: 0 0 40px 40px;
+        backdrop-filter: blur(35px);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: 0.4s ease-in-out;
+        
+        &-grid {
+            display: grid;
+            grid-template-columns: repeat(15, 1fr);
+            gap: 16px;
+        }
+
+        &-block {
+            grid-column: span 3;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 12px;
+            padding: 24px;
+            background-color: var(--color-white);
+            border-radius: 24px;
+
+            &--xl {
+                grid-column: span 5;
+            }
+
+            &-title {
+                font-size: 18px;
+                line-height: 1.1;
+                font-weight: 600;
+            }
+
+            &-icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 32px;
+                height: 32px;
+                margin-left: auto;
+                border-radius: 50%;
+                background: linear-gradient(90deg, #071C39 0%, #194B8E 49.52%, #071C39 100%);
+
+                &::before {
+                    content: '';
+                    width: 32px;
+                    height: 32px;
+                    background: url('../../img/icons/arrow-right.svg') center center / 32px no-repeat;
+                }
             }
         }
     }
