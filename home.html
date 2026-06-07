@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/fancybox.min.css">
     <link rel="stylesheet" href="./scss/main.css">
     <title>Главная</title>
 </head>
@@ -144,7 +145,7 @@
                         Подбираем решения под задачи производства, поставляем надежный инструмент
                         и помогаем находить оптимальные варианты для стабильной и безопасной работы
                     </div>
-                    <a href="#" class="hero__btn btn">
+                    <a href="#" class="hero__btn btn" data-fancybox data-type="ajax" data-src="./popup-callback.html">
                         <div class="btn__text">Задать вопрос</div>
                     </a>
                 </div>
@@ -389,6 +390,8 @@
         </div>
     </footer>
 
+    <script src="js/jquery.min.js"></script>
+    <script src="js/fancybox.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

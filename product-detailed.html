@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/swiper.min.css">
+    <link rel="stylesheet" href="./scss/fancybox.min.css">
+    <link rel="stylesheet" href="./scss/main.css">
+    <title>Каталог</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__inner">
+                    <a href="#" class="header__logo">
+                        <img class="logo-primary" src="./img/logo.svg" alt="">
+                        <img class="logo-white" src="./img/logo-white.svg" alt="">
+                    </a>
+                    <nav class="header__nav">
+                        <ul class="header__nav-list">
+                            <li class="header__nav-item">
+                                <a href="#" class="header__nav-link line-link js-header-catalog-link">Каталог</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#" class="header__nav-link line-link">Услуги</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#" class="header__nav-link line-link">О компании</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#" class="header__nav-link line-link">Новости</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#" class="header__nav-link line-link">Скачать каталоги</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#" class="header__nav-link line-link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__action">
+                        <a href="tel:+78124253448" class="header__tel line-link">+7 812 425-34-48</a>
+                        <a href="#" class="header__basket">
+                            <span class="header__basket-icon">
+                                <svg width="22" height="19" viewBox="0 0 22 19" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M21.8284 2.57417C21.6661 2.35757 21.4113 2.23008 21.1406 2.23008H4.95357L4.48164 0.617934C4.37443 0.251668 4.03855 0 3.6569 0H0.859375C0.384742 0 0 0.384742 0 0.859375C0 1.33401 0.384742 1.71875 0.859375 1.71875H3.01301C3.13852 2.14754 6.31288 12.9914 6.4411 13.4295C6.54831 13.7957 6.88424 14.0474 7.26585 14.0474H18.1845C18.5662 14.0474 18.902 13.7957 19.0093 13.4295L21.9654 3.33089C22.0414 3.07119 21.9906 2.79078 21.8284 2.57417ZM17.5407 12.3286H7.90973L5.45673 3.94883H19.9937L17.5407 12.3286Z"
+                                        fill="#194B8E" />
+                                    <path
+                                        d="M10.4106 18.0469C11.0514 18.0469 11.5708 17.5275 11.5708 16.8867C11.5708 16.246 11.0514 15.7266 10.4106 15.7266C9.76991 15.7266 9.25049 16.246 9.25049 16.8867C9.25049 17.5275 9.76991 18.0469 10.4106 18.0469Z"
+                                        fill="#E4002B" />
+                                    <path
+                                        d="M15.0396 18.0469C15.6803 18.0469 16.1997 17.5275 16.1997 16.8867C16.1997 16.246 15.6803 15.7266 15.0396 15.7266C14.3988 15.7266 13.8794 16.246 13.8794 16.8867C13.8794 17.5275 14.3988 18.0469 15.0396 18.0469Z"
+                                        fill="#E4002B" />
+                                </svg>
+                            </span>
+                            <span class="header__basket-counter">2</span>
+                        </a>
+                        <button type="button" class="header__burger">
+                            <img class="header__burger-default" src="./img/burger.svg" alt="">
+                            <img class="header__burger-close" src="./img/burger-close.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="header__catalog js-header-catalog-menu">
+                    <div class="header__catalog-grid">
+                        <a href="#" class="header__catalog-block">
+                            <div class="header__catalog-block-title">Гидравлические <br> гайковерты</div>
+                            <div class="header__catalog-block-icon"></div>
+                        </a>
+                        <a href="#" class="header__catalog-block">
+                            <div class="header__catalog-block-title">Абразивные <br> круги</div>
+                            <div class="header__catalog-block-icon"></div>
+                        </a>
+                        <a href="#" class="header__catalog-block">
+                            <div class="header__catalog-block-title">Мультипликаторы</div>
+                            <div class="header__catalog-block-icon"></div>
+                        </a>
+                        <a href="#" class="header__catalog-block">
+                            <div class="header__catalog-block-title">Пневматический <br> инструмент</div>
+                            <div class="header__catalog-block-icon"></div>
+                        </a>
+                        <a href="#" class="header__catalog-block">
+                            <div class="header__catalog-block-title">Инструмент <br> для работы <br> на высоте</div>
+                            <div class="header__catalog-block-icon"></div>
+                        </a>
+                        <a href="#" class="header__catalog-block">
+                            <div class="header__catalog-block-title">Инструмент <br> для работы <br> на высоте</div>
+                            <div class="header__catalog-block-icon"></div>
+                        </a>
+                        <a href="#" class="header__catalog-block">
+                            <div class="header__catalog-block-title">Инструмент <br> для работы <br> на высоте</div>
+                            <div class="header__catalog-block-icon"></div>
+                        </a>
+                        <a href="#" class="header__catalog-block">
+                            <div class="header__catalog-block-title">Инструмент <br> для работы <br> на высоте</div>
+                            <div class="header__catalog-block-icon"></div>
+                        </a>
+                        <a href="#" class="header__catalog-block">
+                            <div class="header__catalog-block-title">Инструмент <br> для работы <br> на высоте</div>
+                            <div class="header__catalog-block-icon"></div>
+                        </a>
+                        <a href="#" class="header__catalog-block">
+                            <div class="header__catalog-block-title">Инструмент <br> для работы <br> на высоте</div>
+                            <div class="header__catalog-block-icon"></div>
+                        </a>
+                        <a href="#" class="header__catalog-block header__catalog-block--xl">
+                            <div class="header__catalog-block-title">
+                                Гидравлический аварийно-спасательный инструмент
+                            </div>
+                            <div class="header__catalog-block-icon"></div>
+                        </a>
+                        <a href="#" class="header__catalog-block header__catalog-block--xl">
+                            <div class="header__catalog-block-title">
+                                Промышленная <br> мебель
+                            </div>
+                            <div class="header__catalog-block-icon"></div>
+                        </a>
+                        <a href="#" class="header__catalog-block header__catalog-block--xl">
+                            <div class="header__catalog-block-title">
+                                Дополнительное <br> оборудование
+                            </div>
+                            <div class="header__catalog-block-icon"></div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <main>
+        <section class="hero-page-header section">
+            <div class="container">
+                <div class="hero-page-header__inner">
+                    <div class="hero-page-header__breadcrumbs breadcrumbs">
+                        <ul class="breadcrumbs__list">
+                            <li class="breadcrumbs__item">
+                                <a href="#" class="breadcrumbs__link">Главная</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <a href="#" class="breadcrumbs__link">Каталог</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <a href="#" class="breadcrumbs__link">Гидравлические гайковерты</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <h1 class="hero-page-header__title">Гидравлические <br> гайковерты</h1>
+                </div>
+            </div>
+        </section>
+        <section class="catalog">
+            <div class="container">
+                <div class="catalog__inner">
+                    <div class="catalog__sidebar">
+                        <div class="catalog__sidebar-inner">
+                            <div class="catalog__sidebar-block">
+                                <div class="catalog__nav">
+                                    <ul class="catalog__nav-list">
+                                        <li class="catalog__nav-item">
+                                            <a href="#" class="catalog__nav-item-link">Гидравлические гайковерты</a>
+                                            <ul class="catalog__nav-item-sublist">
+                                                <li class="catalog__nav-item-subitem">
+                                                    <a href="#" class="catalog__nav-item-sublink">Затяжка моментом</a>
+                                                </li>
+                                                <li class="catalog__nav-item-subitem">
+                                                    <a href="#" class="catalog__nav-item-sublink">Затяжка натяжением</a>
+                                                </li>
+                                                <li class="catalog__nav-item-subitem">
+                                                    <a href="#" class="catalog__nav-item-sublink">Гидравлические цилиндры</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="catalog__sidebar-block">
+                                <div class="catalog__links">
+                                    <a href="#" class="catalog__link">
+                                        Гидравлический аварийно-спасательный инструмент
+                                    </a>
+                                    <a href="#" class="catalog__link">
+                                        Мультипликаторы
+                                    </a>
+                                    <a href="#" class="catalog__link">
+                                        Пневматический инструмент
+                                    </a>
+                                    <a href="#" class="catalog__link">
+                                        Слесарно-монтажный инструмент
+                                    </a>
+                                    <a href="#" class="catalog__link">
+                                        Инструмент для работы на высоте
+                                    </a>
+                                    <a href="#" class="catalog__link">
+                                        Искробезопасный инструмент
+                                    </a>
+                                    <a href="#" class="catalog__link">
+                                        Резьбонарезной инструмент
+                                    </a>
+                                    <a href="#" class="catalog__link">
+                                        Мерительный инструмент
+                                    </a>
+                                    <a href="#" class="catalog__link">
+                                        Съемники
+                                    </a>
+                                    <a href="#" class="catalog__link">
+                                        Промышленная мебель
+                                    </a>
+                                    <a href="#" class="catalog__link">
+                                        Абразивные круги
+                                    </a>
+                                    <a href="#" class="catalog__link">
+                                        Дополнительное оборудование
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__main">
+                        <div class="product-detailed">
+                            <div class="product-detailed__main">
+                                <div class="product-details">
+                                    <div class="product-details__main">
+                                        <div class="product-details__gallery">
+                                            <div class="product-details__slider js-product-detailed-slider">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                        <picture class="product-details__slider-img">
+                                                            <img src="./img/product-detailed/img-01.png" alt="">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <picture class="product-details__slider-img">
+                                                            <img src="./img/product-detailed/img-01.png" alt="">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <picture class="product-details__slider-img">
+                                                            <img src="./img/product-detailed/img-01.png" alt="">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <picture class="product-details__slider-img">
+                                                            <img src="./img/product-detailed/img-01.png" alt="">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <picture class="product-details__slider-img">
+                                                            <img src="./img/product-detailed/img-01.png" alt="">
+                                                        </picture>
+                                                    </div>
+                                                </div>
+                                                <button type="button" class="product-details__slider-prev js-product-detailed-slider-prev">
+                                                    <svg width="19" height="32" viewBox="0 0 19 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.0021 31.8966C16.8034 31.8966 17.5551 31.5871 18.1222 31.022C19.2926 29.8557 19.2926 27.9583 18.1222 26.7921L7.2426 15.9506L18.1222 5.10454C19.2926 3.9383 19.2926 2.04092 18.1222 0.874679C16.9519 -0.29156 15.0479 -0.29156 13.8775 0.874679L0.877754 13.8334C-0.292585 14.9996 -0.292585 16.897 0.877754 18.0632L13.8775 31.022C14.4447 31.5871 15.1964 31.8966 16.0021 31.8966ZM16.0021 0.749084C16.6053 0.749084 17.168 0.982332 17.5911 1.40397C18.4688 2.27865 18.4688 3.70057 17.5911 4.57524L6.44587 15.6859C6.30182 15.8294 6.30182 16.0672 6.44587 16.2107L17.5911 27.3214C18.4688 28.1961 18.4688 29.618 17.5911 30.4927C16.7133 31.3673 15.2864 31.3673 14.4087 30.4927L1.40441 17.534C0.531153 16.6593 0.531153 15.2374 1.40441 14.3627L14.4087 1.40397C14.8318 0.982332 15.399 0.749084 16.0021 0.749084Z" fill="#858994" fill-opacity="0.36"/>
+                                                    </svg>
+                                                </button>
+                                                <button type="button" class="product-details__slider-next js-product-detailed-slider-next">
+                                                    <svg width="19" height="32" viewBox="0 0 19 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.99787 31.8966C2.19664 31.8966 1.44492 31.5871 0.877754 31.022C-0.292585 29.8557 -0.292585 27.9583 0.877754 26.7921L11.7574 15.9506L0.877754 5.10454C-0.292585 3.9383 -0.292585 2.04092 0.877754 0.874679C2.04809 -0.29156 3.95214 -0.29156 5.12248 0.874679L18.1222 13.8334C19.2926 14.9996 19.2926 16.897 18.1222 18.0632L5.12248 31.022C4.55532 31.5871 3.8036 31.8966 2.99787 31.8966ZM2.99787 0.749084C2.39469 0.749084 1.83203 0.982332 1.40891 1.40397C0.531154 2.27865 0.531154 3.70057 1.40891 4.57524L12.5541 15.6859C12.6982 15.8294 12.6982 16.0672 12.5541 16.2107L1.40891 27.3214C0.531154 28.1961 0.531154 29.618 1.40891 30.4927C2.28666 31.3673 3.71358 31.3673 4.59133 30.4927L17.5956 17.534C18.4688 16.6593 18.4688 15.2374 17.5956 14.3627L4.59133 1.40397C4.16821 0.982332 3.60104 0.749084 2.99787 0.749084Z" fill="#858994" fill-opacity="0.36"/>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div class="product-details__thumbs js-product-detailed-thumbs">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                        <picture class="product-details__thumbs-img">
+                                                            <img src="./img/product-detailed/thumb-01.png" alt="">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <picture class="product-details__thumbs-img">
+                                                            <img src="./img/product-detailed/thumb-02.png" alt="">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <picture class="product-details__thumbs-img">
+                                                            <img src="./img/product-detailed/thumb-03.png" alt="">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <picture class="product-details__thumbs-img">
+                                                            <img src="./img/product-detailed/thumb-03.png" alt="">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <picture class="product-details__thumbs-img">
+                                                            <img src="./img/product-detailed/thumb-01.png" alt="">
+                                                        </picture>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-details__action">
+                                            <button type="button" class="product-details__btn btn btn--wide">
+                                                <div class="btn__text">Отправить запрос</div>
+                                            </button>
+                                            <button type="button" class="product-details__more-info">Подробнее</button>
+                                        </div>
+                                    </div>
+                                    <div class="product-details__info">
+                                        <div class="product-details__title">
+                                            9 моделей гайковертов <br> от 100 до 62 580 Н∙м
+                                        </div>
+                                        <div class="product-details__list">
+                                            <div class="product-details__list-row">
+                                                <div class="product-details__list-item">
+                                                    <span>±3%</span>
+                                                    Точность воспроизведения крутящего момента
+                                                </div>
+                                                <div class="product-details__list-item">
+                                                    <span>700 бар</span>
+                                                    Максимальное рабочее давление
+                                                </div>
+                                            </div>
+                                            <div class="product-details__list-row">
+                                                <div class="product-details__list-item">
+                                                    Аксиальный упор стандартной длины 
+                                                    для работы в ограниченных пространствах
+                                                </div>
+                                                <div class="product-details__list-item">
+                                                    Вертлюг, поворачивающийся на 360° (х180°): 
+                                                    полная свобода выбора положения инструмента
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-detailed__desc">
+                                <div class="product-detailed__desc-text">
+                                    <p>Гидравлические торцевые гайковёрты серии AST представляют собой флагманскую 
+                                    серию моделей моментных ключей teho. Серия отличается широким ассортиментом 
+                                    доступных моделей с различными крутящими моментами и аксиальным 
+                                    расположением реакционного упора.</p>
+                                    <p>Использование шлицевого посадочного гнезда, расположенного соосно 
+                                    с приводным валом гайковёрта, существенно облегчает его применение 
+                                    во многих реальных промышленных задачах. Перенос возникающей скручивающей 
+                                    силы непосредственно на приводную часть ключа увеличивает срок его 
+                                    эксплуатации при работе с предельно высокими крутящими моментами.</p>
+                                    <p>Дополнительно, использование аксиального посадочного 
+                                    гнезда обеспечивает возможность разработки специальных 
+                                    приспособлений для решения нестандартных задач по обслуживанию 
+                                    болтовых соединений, в частности – приспособлений для безупорной 
+                                    затяжки ответственного крепежа.</p>
+                                    <p>Применение профильной шайбы (3) со специальной насечкой, обеспечивающей 
+                                    сцепление с поверхностью, и соответствующего упорного стакана-адаптера 
+                                    (1) позволяет обслуживать резьбовое соединение в режиме безупорной 
+                                    затяжки. Рабочее усилие передаётся на гайку при помощи стандартной 
+                                    торцевой головки (2). Возникающий при работе крутящий момент переносится 
+                                    непосредственно на профильную шайбу, без необходимости использования 
+                                    внешней точки опоры.</p>
+                                    <p>Безупорный режим работы обеспечивает максимальную точность момента 
+                                    затяжки крепежа и одновременно позволяет не использовать другие элементы 
+                                    конструкции в качестве неподвижной опоры, исключая  возможность их повреждения.</p>
+                                </div>
+                                <a href="#" class="product-detailed__desc-btn">
+                                    Скрыть подробности
+                                </a>
+                            </div>
+                            <div class="product-detailed__series">
+                                <div class="product-detailed__series-table">
+                                    <div class="product-detailed__series-head">
+                                        <div class="product-detailed__series-cell">Код</div>
+                                        <div class="product-detailed__series-cell">Крутящий <br> момент, мин</div>
+                                        <div class="product-detailed__series-cell">Крутящий <br> момент, макс</div>
+                                        <div class="product-detailed__series-cell">Резьба, <br> м</div>
+                                        <div class="product-detailed__series-cell">Размер <br> под ключ, S</div>
+                                        <div class="product-detailed__series-cell">Привод</div>
+                                        <div class="product-detailed__series-cell">Масса, кг</div>
+                                        <div class="product-detailed__series-cell">L1, мм</div>
+                                        <div class="product-detailed__series-cell">H1</div>
+                                        <div class="product-detailed__series-cell">H2</div>
+                                        <div class="product-detailed__series-cell">H3</div>
+                                        <div class="product-detailed__series-cell">H4</div>
+                                        <div class="product-detailed__series-cell">R, мм</div>
+                                        <div class="product-detailed__series-cell"></div>
+                                    </div>
+                                    <div class="product-detailed__series-item">
+                                        <div class="product-detailed__series-cell">AST-07</div>
+                                        <div class="product-detailed__series-cell">100</div>
+                                        <div class="product-detailed__series-cell">1010</div>
+                                        <div class="product-detailed__series-cell">14-30</div>
+                                        <div class="product-detailed__series-cell">22-46</div>
+                                        <div class="product-detailed__series-cell">3/4″</div>
+                                        <div class="product-detailed__series-cell">1,4</div>
+                                        <div class="product-detailed__series-cell">104</div>
+                                        <div class="product-detailed__series-cell">76</div>
+                                        <div class="product-detailed__series-cell">108</div>
+                                        <div class="product-detailed__series-cell">46</div>
+                                        <div class="product-detailed__series-cell">102</div>
+                                        <div class="product-detailed__series-cell">25</div>
+                                        <div class="product-detailed__series-cell">
+                                            <button class="product-detailed__series-to-cart">
+                                                <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M21.8284 2.57417C21.6661 2.35757 21.4113 2.23008 21.1406 2.23008H4.95357L4.48164 0.617934C4.37443 0.251668 4.03855 0 3.6569 0H0.859375C0.384742 0 0 0.384742 0 0.859375C0 1.33401 0.384742 1.71875 0.859375 1.71875H3.01301C3.13852 2.14754 6.31288 12.9914 6.4411 13.4295C6.54831 13.7957 6.88424 14.0474 7.26585 14.0474H18.1845C18.5662 14.0474 18.902 13.7957 19.0093 13.4295L21.9654 3.33089C22.0414 3.07119 21.9906 2.79078 21.8284 2.57417ZM17.5407 12.3286H7.90973L5.45673 3.94883H19.9937L17.5407 12.3286Z" fill="#194B8E"/>
+                                                    <path d="M10.4106 18.0469C11.0514 18.0469 11.5708 17.5275 11.5708 16.8867C11.5708 16.246 11.0514 15.7266 10.4106 15.7266C9.76991 15.7266 9.25049 16.246 9.25049 16.8867C9.25049 17.5275 9.76991 18.0469 10.4106 18.0469Z" fill="#E4002B"/>
+                                                    <path d="M15.0396 18.0469C15.6803 18.0469 16.1997 17.5275 16.1997 16.8867C16.1997 16.246 15.6803 15.7266 15.0396 15.7266C14.3988 15.7266 13.8794 16.246 13.8794 16.8867C13.8794 17.5275 14.3988 18.0469 15.0396 18.0469Z" fill="#E4002B"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-detailed__series-item">
+                                        <div class="product-detailed__series-cell">AST-07</div>
+                                        <div class="product-detailed__series-cell">100</div>
+                                        <div class="product-detailed__series-cell">1010</div>
+                                        <div class="product-detailed__series-cell">14-30</div>
+                                        <div class="product-detailed__series-cell">22-46</div>
+                                        <div class="product-detailed__series-cell">3/4″</div>
+                                        <div class="product-detailed__series-cell">1,4</div>
+                                        <div class="product-detailed__series-cell">104</div>
+                                        <div class="product-detailed__series-cell">76</div>
+                                        <div class="product-detailed__series-cell">108</div>
+                                        <div class="product-detailed__series-cell">46</div>
+                                        <div class="product-detailed__series-cell">102</div>
+                                        <div class="product-detailed__series-cell">25</div>
+                                        <div class="product-detailed__series-cell">
+                                            <button class="product-detailed__series-to-cart">
+                                                <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M21.8284 2.57417C21.6661 2.35757 21.4113 2.23008 21.1406 2.23008H4.95357L4.48164 0.617934C4.37443 0.251668 4.03855 0 3.6569 0H0.859375C0.384742 0 0 0.384742 0 0.859375C0 1.33401 0.384742 1.71875 0.859375 1.71875H3.01301C3.13852 2.14754 6.31288 12.9914 6.4411 13.4295C6.54831 13.7957 6.88424 14.0474 7.26585 14.0474H18.1845C18.5662 14.0474 18.902 13.7957 19.0093 13.4295L21.9654 3.33089C22.0414 3.07119 21.9906 2.79078 21.8284 2.57417ZM17.5407 12.3286H7.90973L5.45673 3.94883H19.9937L17.5407 12.3286Z" fill="#194B8E"/>
+                                                    <path d="M10.4106 18.0469C11.0514 18.0469 11.5708 17.5275 11.5708 16.8867C11.5708 16.246 11.0514 15.7266 10.4106 15.7266C9.76991 15.7266 9.25049 16.246 9.25049 16.8867C9.25049 17.5275 9.76991 18.0469 10.4106 18.0469Z" fill="#E4002B"/>
+                                                    <path d="M15.0396 18.0469C15.6803 18.0469 16.1997 17.5275 16.1997 16.8867C16.1997 16.246 15.6803 15.7266 15.0396 15.7266C14.3988 15.7266 13.8794 16.246 13.8794 16.8867C13.8794 17.5275 14.3988 18.0469 15.0396 18.0469Z" fill="#E4002B"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-detailed__series-item">
+                                        <div class="product-detailed__series-cell">AST-07</div>
+                                        <div class="product-detailed__series-cell">100</div>
+                                        <div class="product-detailed__series-cell">1010</div>
+                                        <div class="product-detailed__series-cell">14-30</div>
+                                        <div class="product-detailed__series-cell">22-46</div>
+                                        <div class="product-detailed__series-cell">3/4″</div>
+                                        <div class="product-detailed__series-cell">1,4</div>
+                                        <div class="product-detailed__series-cell">104</div>
+                                        <div class="product-detailed__series-cell">76</div>
+                                        <div class="product-detailed__series-cell">108</div>
+                                        <div class="product-detailed__series-cell">46</div>
+                                        <div class="product-detailed__series-cell">102</div>
+                                        <div class="product-detailed__series-cell">25</div>
+                                        <div class="product-detailed__series-cell">
+                                            <button class="product-detailed__series-to-cart">
+                                                <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M21.8284 2.57417C21.6661 2.35757 21.4113 2.23008 21.1406 2.23008H4.95357L4.48164 0.617934C4.37443 0.251668 4.03855 0 3.6569 0H0.859375C0.384742 0 0 0.384742 0 0.859375C0 1.33401 0.384742 1.71875 0.859375 1.71875H3.01301C3.13852 2.14754 6.31288 12.9914 6.4411 13.4295C6.54831 13.7957 6.88424 14.0474 7.26585 14.0474H18.1845C18.5662 14.0474 18.902 13.7957 19.0093 13.4295L21.9654 3.33089C22.0414 3.07119 21.9906 2.79078 21.8284 2.57417ZM17.5407 12.3286H7.90973L5.45673 3.94883H19.9937L17.5407 12.3286Z" fill="#194B8E"/>
+                                                    <path d="M10.4106 18.0469C11.0514 18.0469 11.5708 17.5275 11.5708 16.8867C11.5708 16.246 11.0514 15.7266 10.4106 15.7266C9.76991 15.7266 9.25049 16.246 9.25049 16.8867C9.25049 17.5275 9.76991 18.0469 10.4106 18.0469Z" fill="#E4002B"/>
+                                                    <path d="M15.0396 18.0469C15.6803 18.0469 16.1997 17.5275 16.1997 16.8867C16.1997 16.246 15.6803 15.7266 15.0396 15.7266C14.3988 15.7266 13.8794 16.246 13.8794 16.8867C13.8794 17.5275 14.3988 18.0469 15.0396 18.0469Z" fill="#E4002B"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-detailed__series-item">
+                                        <div class="product-detailed__series-cell">AST-07</div>
+                                        <div class="product-detailed__series-cell">100</div>
+                                        <div class="product-detailed__series-cell">1010</div>
+                                        <div class="product-detailed__series-cell">14-30</div>
+                                        <div class="product-detailed__series-cell">22-46</div>
+                                        <div class="product-detailed__series-cell">3/4″</div>
+                                        <div class="product-detailed__series-cell">1,4</div>
+                                        <div class="product-detailed__series-cell">104</div>
+                                        <div class="product-detailed__series-cell">76</div>
+                                        <div class="product-detailed__series-cell">108</div>
+                                        <div class="product-detailed__series-cell">46</div>
+                                        <div class="product-detailed__series-cell">102</div>
+                                        <div class="product-detailed__series-cell">25</div>
+                                        <div class="product-detailed__series-cell">
+                                            <button class="product-detailed__series-to-cart">
+                                                <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M21.8284 2.57417C21.6661 2.35757 21.4113 2.23008 21.1406 2.23008H4.95357L4.48164 0.617934C4.37443 0.251668 4.03855 0 3.6569 0H0.859375C0.384742 0 0 0.384742 0 0.859375C0 1.33401 0.384742 1.71875 0.859375 1.71875H3.01301C3.13852 2.14754 6.31288 12.9914 6.4411 13.4295C6.54831 13.7957 6.88424 14.0474 7.26585 14.0474H18.1845C18.5662 14.0474 18.902 13.7957 19.0093 13.4295L21.9654 3.33089C22.0414 3.07119 21.9906 2.79078 21.8284 2.57417ZM17.5407 12.3286H7.90973L5.45673 3.94883H19.9937L17.5407 12.3286Z" fill="#194B8E"/>
+                                                    <path d="M10.4106 18.0469C11.0514 18.0469 11.5708 17.5275 11.5708 16.8867C11.5708 16.246 11.0514 15.7266 10.4106 15.7266C9.76991 15.7266 9.25049 16.246 9.25049 16.8867C9.25049 17.5275 9.76991 18.0469 10.4106 18.0469Z" fill="#E4002B"/>
+                                                    <path d="M15.0396 18.0469C15.6803 18.0469 16.1997 17.5275 16.1997 16.8867C16.1997 16.246 15.6803 15.7266 15.0396 15.7266C14.3988 15.7266 13.8794 16.246 13.8794 16.8867C13.8794 17.5275 14.3988 18.0469 15.0396 18.0469Z" fill="#E4002B"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-detailed__series-item">
+                                        <div class="product-detailed__series-cell">AST-07</div>
+                                        <div class="product-detailed__series-cell">100</div>
+                                        <div class="product-detailed__series-cell">1010</div>
+                                        <div class="product-detailed__series-cell">14-30</div>
+                                        <div class="product-detailed__series-cell">22-46</div>
+                                        <div class="product-detailed__series-cell">3/4″</div>
+                                        <div class="product-detailed__series-cell">1,4</div>
+                                        <div class="product-detailed__series-cell">104</div>
+                                        <div class="product-detailed__series-cell">76</div>
+                                        <div class="product-detailed__series-cell">108</div>
+                                        <div class="product-detailed__series-cell">46</div>
+                                        <div class="product-detailed__series-cell">102</div>
+                                        <div class="product-detailed__series-cell">25</div>
+                                        <div class="product-detailed__series-cell">
+                                            <button class="product-detailed__series-to-cart">
+                                                <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M21.8284 2.57417C21.6661 2.35757 21.4113 2.23008 21.1406 2.23008H4.95357L4.48164 0.617934C4.37443 0.251668 4.03855 0 3.6569 0H0.859375C0.384742 0 0 0.384742 0 0.859375C0 1.33401 0.384742 1.71875 0.859375 1.71875H3.01301C3.13852 2.14754 6.31288 12.9914 6.4411 13.4295C6.54831 13.7957 6.88424 14.0474 7.26585 14.0474H18.1845C18.5662 14.0474 18.902 13.7957 19.0093 13.4295L21.9654 3.33089C22.0414 3.07119 21.9906 2.79078 21.8284 2.57417ZM17.5407 12.3286H7.90973L5.45673 3.94883H19.9937L17.5407 12.3286Z" fill="#194B8E"/>
+                                                    <path d="M10.4106 18.0469C11.0514 18.0469 11.5708 17.5275 11.5708 16.8867C11.5708 16.246 11.0514 15.7266 10.4106 15.7266C9.76991 15.7266 9.25049 16.246 9.25049 16.8867C9.25049 17.5275 9.76991 18.0469 10.4106 18.0469Z" fill="#E4002B"/>
+                                                    <path d="M15.0396 18.0469C15.6803 18.0469 16.1997 17.5275 16.1997 16.8867C16.1997 16.246 15.6803 15.7266 15.0396 15.7266C14.3988 15.7266 13.8794 16.246 13.8794 16.8867C13.8794 17.5275 14.3988 18.0469 15.0396 18.0469Z" fill="#E4002B"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-detailed__series-item">
+                                        <div class="product-detailed__series-cell">
+                                            AST-07 AST-07 AST-07 AST AST-07 AST-07 AST-07 AST
+                                        </div>
+                                        <div class="product-detailed__series-cell">100</div>
+                                        <div class="product-detailed__series-cell">1010</div>
+                                        <div class="product-detailed__series-cell">14-30</div>
+                                        <div class="product-detailed__series-cell">22-46</div>
+                                        <div class="product-detailed__series-cell">3/4″</div>
+                                        <div class="product-detailed__series-cell">1,4</div>
+                                        <div class="product-detailed__series-cell">104</div>
+                                        <div class="product-detailed__series-cell">76</div>
+                                        <div class="product-detailed__series-cell">108</div>
+                                        <div class="product-detailed__series-cell">46</div>
+                                        <div class="product-detailed__series-cell">102</div>
+                                        <div class="product-detailed__series-cell">25</div>
+                                        <div class="product-detailed__series-cell">
+                                            <button class="product-detailed__series-to-cart">
+                                                <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M21.8284 2.57417C21.6661 2.35757 21.4113 2.23008 21.1406 2.23008H4.95357L4.48164 0.617934C4.37443 0.251668 4.03855 0 3.6569 0H0.859375C0.384742 0 0 0.384742 0 0.859375C0 1.33401 0.384742 1.71875 0.859375 1.71875H3.01301C3.13852 2.14754 6.31288 12.9914 6.4411 13.4295C6.54831 13.7957 6.88424 14.0474 7.26585 14.0474H18.1845C18.5662 14.0474 18.902 13.7957 19.0093 13.4295L21.9654 3.33089C22.0414 3.07119 21.9906 2.79078 21.8284 2.57417ZM17.5407 12.3286H7.90973L5.45673 3.94883H19.9937L17.5407 12.3286Z" fill="#194B8E"/>
+                                                    <path d="M10.4106 18.0469C11.0514 18.0469 11.5708 17.5275 11.5708 16.8867C11.5708 16.246 11.0514 15.7266 10.4106 15.7266C9.76991 15.7266 9.25049 16.246 9.25049 16.8867C9.25049 17.5275 9.76991 18.0469 10.4106 18.0469Z" fill="#E4002B"/>
+                                                    <path d="M15.0396 18.0469C15.6803 18.0469 16.1997 17.5275 16.1997 16.8867C16.1997 16.246 15.6803 15.7266 15.0396 15.7266C14.3988 15.7266 13.8794 16.246 13.8794 16.8867C13.8794 17.5275 14.3988 18.0469 15.0396 18.0469Z" fill="#E4002B"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <table class="product-detailed__table">
+                                <thead class="product-detailed__table-thead">
+                                    <tr class="product-detailed__table-thead-row">
+                                        <th class="product-detailed__table-thead-cell">Код</th>
+                                        <th class="product-detailed__table-thead-cell">Крутящий <br> момент, мин</th>
+                                        <th class="product-detailed__table-thead-cell">Крутящий <br> момент, макс</th>
+                                        <th class="product-detailed__table-thead-cell">Резьба, <br> м</th>
+                                        <th class="product-detailed__table-thead-cell">Размер <br> под ключ, S</th>
+                                        <th class="product-detailed__table-thead-cell">Привод</th>
+                                        <th class="product-detailed__table-thead-cell">Масса, кг</th>
+                                        <th class="product-detailed__table-thead-cell">L1, мм</th>
+                                        <th class="product-detailed__table-thead-cell">H1</th>
+                                        <th class="product-detailed__table-thead-cell">H2</th>
+                                        <th class="product-detailed__table-thead-cell">H3</th>
+                                        <th class="product-detailed__table-thead-cell">H4</th>
+                                        <th class="product-detailed__table-thead-cell">R, мм</th>
+                                        <th class="product-detailed__table-thead-cell"></th>
+                                    </tr>
+                                </thead>
+                                <tbody class="product-detailed__table-body">
+                                    <tr class="product-detailed__table-row">
+                                        <td class="product-detailed__table-cell">AST-07</td>
+                                        <td class="product-detailed__table-cell">100</td>
+                                        <td class="product-detailed__table-cell">1010</td>
+                                        <td class="product-detailed__table-cell">14-30</td>
+                                        <td class="product-detailed__table-cell">22-46</td>
+                                        <td class="product-detailed__table-cell">3/4″</td>
+                                        <td class="product-detailed__table-cell">1,4</td>
+                                        <td class="product-detailed__table-cell">104</td>
+                                        <td class="product-detailed__table-cell">76</td>
+                                        <td class="product-detailed__table-cell">108</td>
+                                        <td class="product-detailed__table-cell">46</td>
+                                        <td class="product-detailed__table-cell">102</td>
+                                        <td class="product-detailed__table-cell">25</td>
+                                        <td class="product-detailed__table-cell">
+                                            <button type="button" data-fancybox data-type="ajax" data-src="popup-add-to-cart.html" class="product-detailed__table-to-cart">
+                                                <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M21.8284 2.57417C21.6661 2.35757 21.4113 2.23008 21.1406 2.23008H4.95357L4.48164 0.617934C4.37443 0.251668 4.03855 0 3.6569 0H0.859375C0.384742 0 0 0.384742 0 0.859375C0 1.33401 0.384742 1.71875 0.859375 1.71875H3.01301C3.13852 2.14754 6.31288 12.9914 6.4411 13.4295C6.54831 13.7957 6.88424 14.0474 7.26585 14.0474H18.1845C18.5662 14.0474 18.902 13.7957 19.0093 13.4295L21.9654 3.33089C22.0414 3.07119 21.9906 2.79078 21.8284 2.57417ZM17.5407 12.3286H7.90973L5.45673 3.94883H19.9937L17.5407 12.3286Z" fill="#194B8E"/>
+                                                    <path d="M10.4106 18.0469C11.0514 18.0469 11.5708 17.5275 11.5708 16.8867C11.5708 16.246 11.0514 15.7266 10.4106 15.7266C9.76991 15.7266 9.25049 16.246 9.25049 16.8867C9.25049 17.5275 9.76991 18.0469 10.4106 18.0469Z" fill="#E4002B"/>
+                                                    <path d="M15.0396 18.0469C15.6803 18.0469 16.1997 17.5275 16.1997 16.8867C16.1997 16.246 15.6803 15.7266 15.0396 15.7266C14.3988 15.7266 13.8794 16.246 13.8794 16.8867C13.8794 17.5275 14.3988 18.0469 15.0396 18.0469Z" fill="#E4002B"/>
+                                                </svg>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr class="product-detailed__table-row">
+                                        <td class="product-detailed__table-cell">AST-07</td>
+                                        <td class="product-detailed__table-cell">100</td>
+                                        <td class="product-detailed__table-cell">1010</td>
+                                        <td class="product-detailed__table-cell">14-30</td>
+                                        <td class="product-detailed__table-cell">22-46</td>
+                                        <td class="product-detailed__table-cell">3/4″</td>
+                                        <td class="product-detailed__table-cell">1,4</td>
+                                        <td class="product-detailed__table-cell">104</td>
+                                        <td class="product-detailed__table-cell">76</td>
+                                        <td class="product-detailed__table-cell">108</td>
+                                        <td class="product-detailed__table-cell">46</td>
+                                        <td class="product-detailed__table-cell">102</td>
+                                        <td class="product-detailed__table-cell">25</td>
+                                        <td class="product-detailed__table-cell">
+                                            <button class="product-detailed__table-to-cart">
+                                                <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M21.8284 2.57417C21.6661 2.35757 21.4113 2.23008 21.1406 2.23008H4.95357L4.48164 0.617934C4.37443 0.251668 4.03855 0 3.6569 0H0.859375C0.384742 0 0 0.384742 0 0.859375C0 1.33401 0.384742 1.71875 0.859375 1.71875H3.01301C3.13852 2.14754 6.31288 12.9914 6.4411 13.4295C6.54831 13.7957 6.88424 14.0474 7.26585 14.0474H18.1845C18.5662 14.0474 18.902 13.7957 19.0093 13.4295L21.9654 3.33089C22.0414 3.07119 21.9906 2.79078 21.8284 2.57417ZM17.5407 12.3286H7.90973L5.45673 3.94883H19.9937L17.5407 12.3286Z" fill="#194B8E"/>
+                                                    <path d="M10.4106 18.0469C11.0514 18.0469 11.5708 17.5275 11.5708 16.8867C11.5708 16.246 11.0514 15.7266 10.4106 15.7266C9.76991 15.7266 9.25049 16.246 9.25049 16.8867C9.25049 17.5275 9.76991 18.0469 10.4106 18.0469Z" fill="#E4002B"/>
+                                                    <path d="M15.0396 18.0469C15.6803 18.0469 16.1997 17.5275 16.1997 16.8867C16.1997 16.246 15.6803 15.7266 15.0396 15.7266C14.3988 15.7266 13.8794 16.246 13.8794 16.8867C13.8794 17.5275 14.3988 18.0469 15.0396 18.0469Z" fill="#E4002B"/>
+                                                </svg>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr class="product-detailed__table-row">
+                                        <td class="product-detailed__table-cell">AST-07</td>
+                                        <td class="product-detailed__table-cell">100</td>
+                                        <td class="product-detailed__table-cell">1010</td>
+                                        <td class="product-detailed__table-cell">14-30</td>
+                                        <td class="product-detailed__table-cell">22-46</td>
+                                        <td class="product-detailed__table-cell">3/4″</td>
+                                        <td class="product-detailed__table-cell">1,4</td>
+                                        <td class="product-detailed__table-cell">104</td>
+                                        <td class="product-detailed__table-cell">76</td>
+                                        <td class="product-detailed__table-cell">108</td>
+                                        <td class="product-detailed__table-cell">46</td>
+                                        <td class="product-detailed__table-cell">102</td>
+                                        <td class="product-detailed__table-cell">25</td>
+                                        <td class="product-detailed__table-cell">
+                                            <button class="product-detailed__table-to-cart">
+                                                <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M21.8284 2.57417C21.6661 2.35757 21.4113 2.23008 21.1406 2.23008H4.95357L4.48164 0.617934C4.37443 0.251668 4.03855 0 3.6569 0H0.859375C0.384742 0 0 0.384742 0 0.859375C0 1.33401 0.384742 1.71875 0.859375 1.71875H3.01301C3.13852 2.14754 6.31288 12.9914 6.4411 13.4295C6.54831 13.7957 6.88424 14.0474 7.26585 14.0474H18.1845C18.5662 14.0474 18.902 13.7957 19.0093 13.4295L21.9654 3.33089C22.0414 3.07119 21.9906 2.79078 21.8284 2.57417ZM17.5407 12.3286H7.90973L5.45673 3.94883H19.9937L17.5407 12.3286Z" fill="#194B8E"/>
+                                                    <path d="M10.4106 18.0469C11.0514 18.0469 11.5708 17.5275 11.5708 16.8867C11.5708 16.246 11.0514 15.7266 10.4106 15.7266C9.76991 15.7266 9.25049 16.246 9.25049 16.8867C9.25049 17.5275 9.76991 18.0469 10.4106 18.0469Z" fill="#E4002B"/>
+                                                    <path d="M15.0396 18.0469C15.6803 18.0469 16.1997 17.5275 16.1997 16.8867C16.1997 16.246 15.6803 15.7266 15.0396 15.7266C14.3988 15.7266 13.8794 16.246 13.8794 16.8867C13.8794 17.5275 14.3988 18.0469 15.0396 18.0469Z" fill="#E4002B"/>
+                                                </svg>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr class="product-detailed__table-row">
+                                        <td class="product-detailed__table-cell">AST-07</td>
+                                        <td class="product-detailed__table-cell">100</td>
+                                        <td class="product-detailed__table-cell">1010</td>
+                                        <td class="product-detailed__table-cell">14-30</td>
+                                        <td class="product-detailed__table-cell">22-46</td>
+                                        <td class="product-detailed__table-cell">3/4″</td>
+                                        <td class="product-detailed__table-cell">1,4</td>
+                                        <td class="product-detailed__table-cell">104</td>
+                                        <td class="product-detailed__table-cell">76</td>
+                                        <td class="product-detailed__table-cell">108</td>
+                                        <td class="product-detailed__table-cell">46</td>
+                                        <td class="product-detailed__table-cell">102</td>
+                                        <td class="product-detailed__table-cell">25</td>
+                                        <td class="product-detailed__table-cell">
+                                            <button class="product-detailed__table-to-cart">
+                                                <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M21.8284 2.57417C21.6661 2.35757 21.4113 2.23008 21.1406 2.23008H4.95357L4.48164 0.617934C4.37443 0.251668 4.03855 0 3.6569 0H0.859375C0.384742 0 0 0.384742 0 0.859375C0 1.33401 0.384742 1.71875 0.859375 1.71875H3.01301C3.13852 2.14754 6.31288 12.9914 6.4411 13.4295C6.54831 13.7957 6.88424 14.0474 7.26585 14.0474H18.1845C18.5662 14.0474 18.902 13.7957 19.0093 13.4295L21.9654 3.33089C22.0414 3.07119 21.9906 2.79078 21.8284 2.57417ZM17.5407 12.3286H7.90973L5.45673 3.94883H19.9937L17.5407 12.3286Z" fill="#194B8E"/>
+                                                    <path d="M10.4106 18.0469C11.0514 18.0469 11.5708 17.5275 11.5708 16.8867C11.5708 16.246 11.0514 15.7266 10.4106 15.7266C9.76991 15.7266 9.25049 16.246 9.25049 16.8867C9.25049 17.5275 9.76991 18.0469 10.4106 18.0469Z" fill="#E4002B"/>
+                                                    <path d="M15.0396 18.0469C15.6803 18.0469 16.1997 17.5275 16.1997 16.8867C16.1997 16.246 15.6803 15.7266 15.0396 15.7266C14.3988 15.7266 13.8794 16.246 13.8794 16.8867C13.8794 17.5275 14.3988 18.0469 15.0396 18.0469Z" fill="#E4002B"/>
+                                                </svg>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr class="product-detailed__table-row">
+                                        <td class="product-detailed__table-cell">AST-07</td>
+                                        <td class="product-detailed__table-cell">100</td>
+                                        <td class="product-detailed__table-cell">1010</td>
+                                        <td class="product-detailed__table-cell">14-30</td>
+                                        <td class="product-detailed__table-cell">22-46</td>
+                                        <td class="product-detailed__table-cell">3/4″</td>
+                                        <td class="product-detailed__table-cell">1,4</td>
+                                        <td class="product-detailed__table-cell">104</td>
+                                        <td class="product-detailed__table-cell">76</td>
+                                        <td class="product-detailed__table-cell">108</td>
+                                        <td class="product-detailed__table-cell">46</td>
+                                        <td class="product-detailed__table-cell">102</td>
+                                        <td class="product-detailed__table-cell">25</td>
+                                        <td class="product-detailed__table-cell">
+                                            <button class="product-detailed__table-to-cart">
+                                                <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M21.8284 2.57417C21.6661 2.35757 21.4113 2.23008 21.1406 2.23008H4.95357L4.48164 0.617934C4.37443 0.251668 4.03855 0 3.6569 0H0.859375C0.384742 0 0 0.384742 0 0.859375C0 1.33401 0.384742 1.71875 0.859375 1.71875H3.01301C3.13852 2.14754 6.31288 12.9914 6.4411 13.4295C6.54831 13.7957 6.88424 14.0474 7.26585 14.0474H18.1845C18.5662 14.0474 18.902 13.7957 19.0093 13.4295L21.9654 3.33089C22.0414 3.07119 21.9906 2.79078 21.8284 2.57417ZM17.5407 12.3286H7.90973L5.45673 3.94883H19.9937L17.5407 12.3286Z" fill="#194B8E"/>
+                                                    <path d="M10.4106 18.0469C11.0514 18.0469 11.5708 17.5275 11.5708 16.8867C11.5708 16.246 11.0514 15.7266 10.4106 15.7266C9.76991 15.7266 9.25049 16.246 9.25049 16.8867C9.25049 17.5275 9.76991 18.0469 10.4106 18.0469Z" fill="#E4002B"/>
+                                                    <path d="M15.0396 18.0469C15.6803 18.0469 16.1997 17.5275 16.1997 16.8867C16.1997 16.246 15.6803 15.7266 15.0396 15.7266C14.3988 15.7266 13.8794 16.246 13.8794 16.8867C13.8794 17.5275 14.3988 18.0469 15.0396 18.0469Z" fill="#E4002B"/>
+                                                </svg>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr class="product-detailed__table-row">
+                                        <td class="product-detailed__table-cell">AST-07</td>
+                                        <td class="product-detailed__table-cell">100</td>
+                                        <td class="product-detailed__table-cell">1010</td>
+                                        <td class="product-detailed__table-cell">14-30</td>
+                                        <td class="product-detailed__table-cell">22-46</td>
+                                        <td class="product-detailed__table-cell">3/4″</td>
+                                        <td class="product-detailed__table-cell">1,4</td>
+                                        <td class="product-detailed__table-cell">104</td>
+                                        <td class="product-detailed__table-cell">76</td>
+                                        <td class="product-detailed__table-cell">108</td>
+                                        <td class="product-detailed__table-cell">46</td>
+                                        <td class="product-detailed__table-cell">102</td>
+                                        <td class="product-detailed__table-cell">25</td>
+                                        <td class="product-detailed__table-cell">
+                                            <button class="product-detailed__table-to-cart">
+                                                <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M21.8284 2.57417C21.6661 2.35757 21.4113 2.23008 21.1406 2.23008H4.95357L4.48164 0.617934C4.37443 0.251668 4.03855 0 3.6569 0H0.859375C0.384742 0 0 0.384742 0 0.859375C0 1.33401 0.384742 1.71875 0.859375 1.71875H3.01301C3.13852 2.14754 6.31288 12.9914 6.4411 13.4295C6.54831 13.7957 6.88424 14.0474 7.26585 14.0474H18.1845C18.5662 14.0474 18.902 13.7957 19.0093 13.4295L21.9654 3.33089C22.0414 3.07119 21.9906 2.79078 21.8284 2.57417ZM17.5407 12.3286H7.90973L5.45673 3.94883H19.9937L17.5407 12.3286Z" fill="#194B8E"/>
+                                                    <path d="M10.4106 18.0469C11.0514 18.0469 11.5708 17.5275 11.5708 16.8867C11.5708 16.246 11.0514 15.7266 10.4106 15.7266C9.76991 15.7266 9.25049 16.246 9.25049 16.8867C9.25049 17.5275 9.76991 18.0469 10.4106 18.0469Z" fill="#E4002B"/>
+                                                    <path d="M15.0396 18.0469C15.6803 18.0469 16.1997 17.5275 16.1997 16.8867C16.1997 16.246 15.6803 15.7266 15.0396 15.7266C14.3988 15.7266 13.8794 16.246 13.8794 16.8867C13.8794 17.5275 14.3988 18.0469 15.0396 18.0469Z" fill="#E4002B"/>
+                                                </svg>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="product-detailed__additional">
+                                <div class="product-detailed__additional-title">Дополнительно</div>
+                                <div class="product-detailed__additional-list">
+                                    <a href="#" class="product-detailed__additional-item">
+                                        <div class="product-detailed__additional-item-head">
+                                            <div class="product-detailed__additional-item-title">Наименование <br> товара</div>
+                                            <div class="product-detailed__additional-item-desc">
+                                                Краткое описание
+                                            </div>
+                                        </div>
+                                        <picture class="product-detailed__additional-item-img">
+                                            <img src="./img/product-detailed/additional.png" alt="Наименование товара">
+                                        </picture>
+                                    </a>
+                                    <a href="#" class="product-detailed__additional-item">
+                                        <div class="product-detailed__additional-item-head">
+                                            <div class="product-detailed__additional-item-title">Наименование <br> товара</div>
+                                            <div class="product-detailed__additional-item-desc">
+                                                Краткое описание
+                                            </div>
+                                        </div>
+                                        <picture class="product-detailed__additional-item-img">
+                                            <img src="./img/product-detailed/additional.png" alt="Наименование товара">
+                                        </picture>
+                                    </a>
+                                    <a href="#" class="product-detailed__additional-item">
+                                        <div class="product-detailed__additional-item-head">
+                                            <div class="product-detailed__additional-item-title">Наименование <br> товара</div>
+                                            <div class="product-detailed__additional-item-desc">
+                                                Краткое описание
+                                            </div>
+                                        </div>
+                                        <picture class="product-detailed__additional-item-img">
+                                            <img src="./img/product-detailed/additional.png" alt="Наименование товара">
+                                        </picture>
+                                    </a>
+                                    <a href="#" class="product-detailed__additional-item">
+                                        <div class="product-detailed__additional-item-head">
+                                            <div class="product-detailed__additional-item-title">Наименование <br> товара</div>
+                                            <div class="product-detailed__additional-item-desc">
+                                                Краткое описание
+                                            </div>
+                                        </div>
+                                        <picture class="product-detailed__additional-item-img">
+                                            <img src="./img/product-detailed/additional.png" alt="Наименование товара">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__main">
+                    <div class="footer__top">
+                        <a href="#" class="footer__logo">
+                            <img src="./img/logo.svg" alt="">
+                        </a>
+                        <nav class="footer__nav">
+                            <a href="#" class="footer__nav-link">Каталог</a>
+                            <a href="#" class="footer__nav-link">Услуги</a>
+                            <a href="#" class="footer__nav-link">О компании</a>
+                            <a href="#" class="footer__nav-link">Новости</a>
+                            <a href="#" class="footer__nav-link">Скачать каталоги</a>
+                        </nav>
+                        <div class="footer__contacts">
+                            <div class="footer__contacts-top">
+                                <div class="footer__contacts-address">
+                                    188300, Ленинградская область, м.о. Гатчинский,
+                                    г. Гатчина, пр-кт 25 Октября, д.42А, помещ.2
+                                </div>
+                                <div class="footer__contacts-address">
+                                    Работа офиса:с 9-00 до 18-00 пн вт ср чт пт сб вс
+                                </div>
+                            </div>
+                            <div class="footer__contacts-links">
+                                <a href="#" class="footer__contacts-link">+7 (812) 425-34-48</a>
+                                <a href="#" class="footer__contacts-link">info@stilon.msk.ru</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__bottom">
+                        <div class="footer__policy">
+                            <a href="#">Политика обработки персональных данных |</a>
+                            <a href="#">Пользовательское соглашение |</a>
+                            <a href="#">Согласие на обработку персональных</a>
+                        </div>
+                        <div class="footer__copyright">
+                            © 2011-2024 Стилон. Все права защищены. Использование материалов
+                            сайта без письменного согласия правооблодателя запрещено
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__map">
+                    <img src="./img/map.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/fancybox.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

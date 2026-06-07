@@ -44,4 +44,32 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     initHeaderCatalog();
+
+    function initProductGallery() {
+        const productSlider = document.querySelector('.js-product-detailed-slider');
+        const productThumbs = document.querySelector('.js-product-detailed-thumbs');
+
+        if(productSlider && productThumbs) {
+
+            const productThumbsSwiper = new Swiper(productThumbs, {
+                slidesPerView: 1,
+                spaceBetween: 6,
+                direction: 'vertical',
+            })
+
+            const productSwiper = new Swiper(productSlider, {
+                slidesPerView: 1,
+                spaceBetween: 16,
+                navigation: {
+                    prevEl: '.js-product-detailed-slider-prev',
+                    nextEl: '.js-product-detailed-slider-next'
+                },
+                thumbs: {
+                    swiper:  productThumbsSwiper,
+                },
+            })
+        }
+    }
+
+    initProductGallery();
 })

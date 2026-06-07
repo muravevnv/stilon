@@ -12,6 +12,7 @@
 @use 'components/counter';
 @use 'components/contacts-form';
 @use 'components/breadcrumbs';
+@use 'components/popup';
 
 @use 'sections/hero';
 @use 'sections/benefits';
@@ -30,3 +31,4 @@
 @use 'sections/order';
 @use 'sections/services';
 @use 'sections/catalog-categories';
+@use 'sections/product-detailed';
