@@ -72,4 +72,25 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     initProductGallery();
+
+    function initShowHiddenBlock() {
+
+        const revealBlock = document.querySelectorAll('[data-reveal]');
+
+        if(revealBlock.length > 0) {
+            revealBlock.forEach(button => {
+                button.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const targetId = button.dataset.reveal;
+                    const targetBlock = document.getElementById(targetId);
+                    
+                    if (targetBlock) {
+                        targetBlock.classList.toggle('is-active');
+                    }
+                });
+            });
+        }
+    }
+
+    initShowHiddenBlock();
 })

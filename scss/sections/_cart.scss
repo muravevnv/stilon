@@ -181,8 +181,8 @@
             content: '';
             width: 15px;
             height: 19px;
-            mask: url('../../img/icons/trash.svg') center center / 15px no-repeat;
-            -webkit-mask: url('../../img/icons/trash.svg') center center / 15px no-repeat;
+            mask: url('../img/icons/trash.svg') center center / 15px no-repeat;
+            -webkit-mask: url('../img/icons/trash.svg') center center / 15px no-repeat;
             background-color: currentColor;
         }
     }

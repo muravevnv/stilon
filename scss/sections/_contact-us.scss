@@ -12,6 +12,11 @@
         display: grid;
         grid-template-columns: 450px 1fr;
         gap: 32px;
+        padding-left: 45px;
+
+        @media screen and (max-width: 1279.98px) {
+            padding-left: 0;
+        }
 
         @media screen and (max-width: 991.98px) {
             display: flex;
